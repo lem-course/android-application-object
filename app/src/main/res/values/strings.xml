@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">App Object</string>
+    <string name="save_lbl">Shrani podatek</string>
+    <string name="goto_help_lbl">Pojdi na pomožno aktivnost</string>
+    <string name="default_value">Privzeta vrednost</string>
+</resources>
