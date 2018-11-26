@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        name = (EditText) findViewById(R.id.name);
-        buttonSave = (Button) findViewById(R.id.button_save);
+        name = findViewById(R.id.name);
+        buttonSave = findViewById(R.id.button_save);
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonHelp = (Button) findViewById(R.id.button_help);
+        buttonHelp = findViewById(R.id.button_help);
         buttonHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

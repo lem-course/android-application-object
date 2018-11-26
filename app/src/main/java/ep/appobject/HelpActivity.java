@@ -11,7 +11,7 @@ public class HelpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
-        display = (TextView) findViewById(R.id.display);
+        display = findViewById(R.id.display);
 
         // TODO: Preberite ime iz objekta aplikacije in ga napisite TextView display
     }
