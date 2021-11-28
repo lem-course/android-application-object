@@ -3,14 +3,19 @@ package ep.appobject
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import ep.appobject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        buttonSave.setOnClickListener { saveToAppObject() }
-        buttonHelp.setOnClickListener {
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.buttonSave.setOnClickListener { saveToAppObject() }
+        binding.buttonHelp.setOnClickListener {
             startActivity(Intent(this, HelpActivity::class.java))
         }
     }
